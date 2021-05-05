@@ -1,5 +1,6 @@
 //IMPORTACAO DO STYLED COMPONENTS
 
+import { Header } from "./components/Header";
 import { GlobalStyle } from "./styles/global";
 
 
@@ -7,7 +8,7 @@ import { GlobalStyle } from "./styles/global";
 export function App() {
   return (
     <div className="App">
-     <h1>Hello World DT MONEY</h1>
+     <Header />
      <GlobalStyle />
     </div>
   );
