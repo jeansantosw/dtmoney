@@ -41,6 +41,7 @@ export function NewTransectionModal({ isOpen, onRequestClose }: NewTransectionMo
             type="button"
             onClick={() => { setType('deposit'); }}
             isActive={type === 'deposit'}
+            activeColor="green"
           >
             <img src={incomeImg} alt="Entrada" />
             <span>Entrada</span>
@@ -50,13 +51,14 @@ export function NewTransectionModal({ isOpen, onRequestClose }: NewTransectionMo
             type="button"
             onClick={() => { setType('withdraw'); }}
             isActive={type === 'withdraw'}
+            activeColor="red"
           >
             <img src={outcomeImg} alt="Saída" />
             <span>Saída</span>
           </RadioBox>
         </TransitionTypeContainer>
 
-        <input placeholder="CAtegoria" />
+        <input placeholder="Categoria" />
 
         <button type="submit">Cadastrar</button>
 
